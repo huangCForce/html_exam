@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="full-screen" content="yes">
+    <title>轰茶君</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css" />
+
+</head>
+
+<body>
+    <audio autoplay="autoplay" loop="loop" src="build/background.mp3"></audio>
+
+    <div class="loading">
+        <div class="running"></div>
+    </div>
+
+    <div class="css-slider-wrapper">
+        <div class="slider slide1">
+            <img class="img-index-1-bg" src="img/img-index-1-bg.png" />
+            <img class="img-index-1-title" src="img/img-index-1-title.png" />
+            <img class="img-index-1-man" src="img/img-index-1-man.png" />
+            <img class="img-left-spread" src="img/top_spread.png" />
+            <div class="div-bottom-title">已经有100人参与</div>
+
+        </div>
+        <div class="slider slide2">
+            <img class="img-index-2-bg" src="img/img-index-2-bg.png" />
+            <img class="img-index-2-title" src="img/img-index-2-title.png" />
+            <img class="img-index-2-light" src="img/img-index-2-light.png" />
+            <img class="img-index-2-shadow" src="img/img-index-2-shadow.png" />
+            <img class="img-index-2-friend" src="img/img-index-2-friend.png" />
+            <img class="img-index-2-man" src="img/img-index-2-man.png" />
+            <div class="div-user-1 nickname">壹号柜</div>
+        </div>
+        <div class="slider slide3">
+            <img class="img-index-3-bg" src="img/img-index-3-bg.png" />
+            <img class="img-index-3-title" src="img/img-index-3-title.png" />
+            <img class="img-index-3-title-bg" src="img/img-index-3-titlebg.png" />
+            <img class="img-index-3-left" src="img/img-index-3-leftman.png" />
+            <img class="img-index-3-right" src="img/img-index-3-rightman.png" />
+            <img class="img-index-3-bottom" src="img/img-index-3-bottom.png" />
+            <div class="div-user-2 nickname">壹号柜</div>
+        </div>
+        <div class="slider slide4">
+            <img class="img-background" src="img/background.png" />
+            <div class="div-content">
+                <div class="div-blue-bg leftText">谁要救他<img class="img-hcj-1" src="img/hcj_1.png" /></div>
+                <div class="div-blue-bg rightText">算了救一下吧<img class="img-hcj-1" src="img/hcj_2.png" /></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="div-give-up-view" style="display: none">
+        <img class="img-index-5-bg" src="img/img-index-5-bg.png" />
+        <img class="img-index-5-head" src="img/img-index-5-head.png" /><br/>
+        <img class="img-index-5-man" src="img/img-index-5-man.png" /><br/>
+        <img class="img-index-5-title" src="img/img-index-5-title.png" />
+    </div>
+
+    <div class="div-exam" style="display: none">
+        <img class="img-background" src="img/background.png" />
+        <div class="div-exam-view">
+            <div style="height: 10px"></div>
+            <div class="div-question">
+                <div class="question"></div>
+            </div>
+            <div class="div-answer">
+                <ul class="answers">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="div-exam-result" style="display: none;">
+    </div>
+
+    <div class="div-share-view">
+        <div class="div-share-tx">
+            <div class="tx-share">点击此处</div>
+            <div class="tx-share">召唤好友来救你！</div>
+        </div>
+        <img class="img-share-bg" src="img/img-share.png" />
+    </div>
+
+    <script src="build/jquery.min.js"></script>
+    <script src="build/jquery.touchSwipe.min.js"></script>
+    <script src="js/record.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/animate.js"></script>
+
+
+    <script>
+        var debug = true;
+        $(function() {
+            if (debug) {
+                setTimeout(function() {
+                    startGame();
+                }, 3000);
+            }
+        });
+    </script>
+</body>
+
+</html>

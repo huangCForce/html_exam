@@ -1,0 +1,648 @@
+html, body { width: 100%; height: 100%; overflow-x: hidden; }
+
+/* @font-face {
+    font-family:myFont; src: url(myFont.ttf);
+} */
+
+.loading{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.9;
+    position: fixed;
+    z-index: 100;
+}
+
+.running{
+    position: absolute;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    top:30%;
+    width: 150px;
+    height: 130px;
+    background: url(../img/running_dog_1.png) no-repeat;
+    background-size: 100%;
+    animation: runanim 0.3s;
+    -webkit-animation: runanim 0.3s;
+    -webkit-animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes runanim {
+    0% {
+        background: url(../img/running_dog_1.png) no-repeat;
+        background-size: 100%;
+    }
+    50% {
+        background: url(../img/running_dog_3.png) no-repeat;
+        background-size: 100%;
+    }
+    100% {
+        background: url(../img/running_dog_1.png) no-repeat;
+        background-size: 100%;
+    }
+}
+
+
+.img-background{
+    height: 100%;
+    position: absolute;
+    z-index:0;
+    margin: 0 auto;
+    left:0;
+    right:0;
+}
+
+/* Slider wrapper*/
+.css-slider-wrapper {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* Slider */
+.slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    z-index: 0;
+    -webkit-transition: -webkit-transform 500ms;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* each slide backgound color */
+.slide1 {
+    background-color: #FDC636;
+    top: 0;
+}
+
+.img-index-1-bg{
+    position: absolute;
+    margin: 0 auto;
+    height: 100%;
+    left:0;
+    right:0;
+    opacity: 0;
+}
+
+.img-index-1-title{
+    position: absolute;
+    margin: 0 auto;
+    height: 33%;
+    left:0;
+    right:0;
+    top:5%;
+    opacity: 0;
+}
+
+.img-index-1-man{
+    position: absolute;
+    height: 55%;
+    margin: 0 auto;
+    left:30%;
+    right:0;
+    bottom: 5%;
+    opacity: 0;
+}
+
+.img-left-spread{
+    position: absolute;
+    bottom: 2%;
+    left:50%;
+    width: 45px;
+    margin-top:-10px;
+    opacity: 0;
+    margin-left: -22px;
+    -webkit-transform:rotate(90deg);
+}
+
+.div-bottom-title{
+    position: fixed;
+    bottom: 10%;
+    width: 30%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius:30px;
+    background-color: #0842A3;
+    opacity: 0.7;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    display:block;
+}
+
+.slide2 {
+    background-color: #0842A3;
+    top: 100%;
+}
+
+.div-user-1{
+    position: absolute;
+    margin: 0 auto;
+    width: 20%;
+    left:17%;
+    right:0;
+    top:15%;
+    color: #FFF;
+    font-size: 20px;
+    opacity: 0;
+}
+
+
+.img-index-2-bg{
+    position: absolute;
+    height: 100%;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    opacity: 0;
+}
+
+.img-index-2-title{
+    position: absolute;
+    height: 20%;
+    top:15%;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    opacity: 0;
+}
+
+.img-index-2-light{
+    position: absolute;
+    margin: 0 auto;
+    height: 5%;
+    left: 5%;
+    right:0;
+    top:45%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.img-index-2-shadow{
+    position: absolute;
+    height: 40%;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    bottom: 13%;
+    z-index: 0;
+    opacity: 0;
+}
+
+.img-index-2-friend{
+    height: 25%;
+    position: absolute;
+    z-index: 3;
+    margin: 0 auto;
+    left:0;
+    right:3%;
+    bottom: 15%;
+    opacity: 0;
+}
+
+.img-index-2-man{
+    height: 42%;
+    position: absolute;
+    z-index: 0;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    bottom: 18%;
+    opacity: 0;
+}
+
+.slide3 {
+    background-color: #FDC636;
+    top: 200%;
+}
+
+.img-index-3-bg{
+    position: absolute;
+    bottom: 0;
+    height: 95%;
+    z-index:-1;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    opacity: 0;
+}
+
+.img-index-3-title{
+    position: absolute;
+    z-index: 1;
+    height: 23%;
+    bottom: 13%;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    opacity: 0;
+}
+
+.img-index-3-title-bg{
+    position: absolute;
+    margin: 0 auto;
+    z-index: 0;
+    height: 30%;
+    bottom: 10%;
+    left:0;
+    right:0;
+    opacity: 0;
+}
+
+.img-index-3-left{
+    position: absolute;
+    margin: 0 auto;
+    z-index: 0;
+    height: 40%;
+    top: 16%;
+    left:0;
+    right:35%;
+    opacity: 0;
+}
+
+.img-index-3-right{
+    position: absolute;
+    margin: 0 auto;
+    z-index: 0;
+    height: 40%;
+    top: 15%;
+    left:40%;
+    right:0;
+    opacity: 0;
+}
+
+.img-index-3-bottom{
+    position: absolute;
+    margin: 0 auto;
+    z-index: -1;
+    height: 10%;
+    top:50%;
+    left:0;
+    right:0;
+    opacity: 0;
+}
+
+.div-user-2{
+    position: absolute;
+    margin: 0 auto;
+    width: 25%;
+    left:50%;
+    right:0;
+    bottom:30%;
+    color: #FFF;
+    font-size: 20px;
+    opacity: 0;
+}
+
+.slide4 {
+    background-color: #FDC636;
+    top: 300%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 200px auto;
+    width: 70%;
+    left:15%;
+    /*z-index: 1;*/
+}
+
+.div-blue-bg{
+    width: 250px;
+    height: 70px;
+    background: url(../img/btn-normal.png) no-repeat;
+    background-size: 100%;
+    color: #FFF;
+    font-size: 2.5rem;
+    line-height:45px;
+    margin: 0 auto;
+}
+
+.img-hcj-1{
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    height: 50px;
+}
+
+.img-hcj-2{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    width: 50px;
+    height: 80px;
+    top:20px;
+}
+
+/* Slider inner slide effect */
+.leftText {
+    opacity: 0;
+}
+
+.rightText {
+    opacity: 0;
+}
+
+.slider h2, .slider .button {
+    -webkit-transition: opacity 1600ms, -webkit-transform 800ms;
+}
+
+.div-give-up-view{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.img-index-5-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left:0;
+    opacity: 0;
+}
+
+.img-index-5-head{
+    position: relative;
+    width: 200px;
+    margin-top: 40px;
+    opacity: 0;
+}
+
+.img-index-5-man{
+    position: relative;
+    width: 180px;
+    z-index: 1;
+    margin-top: 10px;
+    opacity: 0;
+}
+
+.img-index-5-title{
+    position: relative;
+    width: 180px;
+    z-index: 1;
+    margin-top: 10px;
+    opacity: 0;
+}
+
+.div-exam{
+    position: relative;
+    background-color: #FDC636;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.div-exam-view{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+}
+
+.div-share-view{
+    display: none;
+    background-color: black;
+    opacity: 0.9;
+    position: fixed;
+    top:0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+}
+
+.div-share-tx{
+    position: relative;
+    margin-top: 5%;
+}
+
+.tx-share{
+    margin-top: 10px;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.img-share-bg{
+    position: absolute;
+    z-index: -1;
+    height: 80%;
+    top: 5%;
+    right: 5%;
+
+}
+
+.div-exam-result{
+    position: relative;
+    text-align:center;
+}
+
+.img-result-1-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left:0;
+}
+
+.img-result-1-pic{
+    position: relative;
+    width: 200px;
+    margin-top: 80px;
+}
+
+.img-result-1-title{
+    position: relative;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.img-result-2-man{
+    position: relative;
+    width: 200px;
+    z-index: 1;
+    margin-top: 90px;
+}
+
+.img-result-2-man-bg{
+    position: absolute;
+    width: 180px;
+    left:6%;
+    right:0;
+    top:50px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+}
+
+.img-result-3-man-bg{
+    position: absolute;
+    width: 200px;
+    left:0;
+    right:10%;
+    top:55px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+}
+
+.img-result-2-title{
+    position: relative;
+    width: 200px;
+}
+
+.div-button{
+    position: relative;
+    margin-top: 30px;
+}
+
+.record-title{
+    font-size: 2rem;
+}
+
+.item-content{
+    position: relative;
+    height: 80px;
+}
+
+.img-record{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.name-record{
+    font-size: 2rem;
+    float: left;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.detail-content{
+    width: 100px;
+    height: 60px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 2rem;
+    color:white;
+}
+
+.result-success{
+    background: url(../img/img-detail-result-1.png) no-repeat;
+    background-size: 100%;
+}
+
+.result-half{
+    background: url(../img/img-detail-result-3.png) no-repeat;
+    background-size: 100%;
+}
+
+.result-failed{
+    background: url(../img/img-detail-result-2.png) no-repeat;
+    background-size: 100%;
+}
+
+.result-give-up{
+    background: url(../img/img-detail-result-4.png) no-repeat;
+    background-size: 100%;
+}
+
+.btn-bg{
+    z-index: 1;
+    position: absolute;
+    left: 0;
+}
+
+.div-question{
+    width: 80%;
+    height: 0;
+    padding-bottom: 60%;
+    margin-left: 10%;
+    background: url(../img/question_white_bg.png) no-repeat;
+    background-size: 100%;
+}
+
+.question{
+    color: black;
+    font-size: 2rem;
+    padding: 50px 40px;
+    text-align: center;
+    word-break:break-all;
+}
+
+.div-answer ul{
+    width: 70%;
+    margin: 20px auto;
+}
+
+.btn-answer{
+    text-align: center;
+    width:100%;
+    height: 0;
+    padding-bottom: 17%;
+    border:none;
+    color:white;
+    font-size: 2rem;
+    font-weight: bold;
+    background:url(../img/btn-normal.png) no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+.success{
+    background:url(../img/btn-right.png) no-repeat;
+    background-size: 100%;
+}
+
+.wrong{
+    background:url(../img/btn-wrong.png) no-repeat;
+    background-size: 100%;
+}
+
+.design-input{
+    margin: 10px 0;
+    height: 35px;
+    font-size: 20px;
+}
+
+.design-check{
+    margin: 10px 10px;
+    padding-top: 20px;
+    width: 25px;
+    height: 25px;
+}
+
+.div-page{
+    text-align: center;
+}
+
+.arrow{
+    width: 50px;
+    height: 40px;
+    margin: 20px 50px;
+}

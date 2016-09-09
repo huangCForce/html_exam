@@ -1,0 +1,249 @@
+body{
+    background-color: #FDC636;
+    width: 100%;
+}
+
+
+.img-background{
+    height: 100%;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.div-question{
+    width: 80%;
+    height: 0;
+    padding-bottom: 60%;
+    margin-left: 10%;
+    background: url(../img/question_white_bg.png) no-repeat;
+    background-size: 100%;
+}
+
+.question-input{
+    width: 70%;
+    padding: 5% 5%;
+    margin: 10% 10%;
+    font-size: 25px;
+    resize:none;
+    background: none;
+    border: none;
+    color:black;
+    font-family: myFont, monospace;
+}
+
+.div-answer{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn-answer{
+    text-align: center;
+    width:100%;
+    height: 0;
+    padding-bottom: 17%;
+    border:none;
+    color:#333333;
+    font-size: 2rem;
+    font-weight: bold;
+    background:url(../img/btn-normal.png) no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    padding-top: 5%;
+
+}
+
+.design-input{
+    width: 80%;
+    margin-right: 20px;
+    background: none;
+    border: none;
+    color:#FFF;
+    height: 35px;
+    font-size: 20px;
+    font-family: myFont, monospace;
+}
+
+.design-button{
+    width: 25px;
+    height: 25px;
+    background: none;
+    border: none;
+}
+
+.success{
+    background:url(../img/answer_right.png) no-repeat;
+    background-size: 100%;
+}
+
+.pre-step{
+    height: 50px;
+    margin-right: 50px;
+    display: none;
+}
+
+.next-step{
+    height: 50px;
+}
+
+.div-share-view{
+    position: relative;
+    text-align:center;
+}
+
+.img-share-bg{
+    position: absolute;
+    width: 220px;
+    left:0;
+    right:0;
+    top:50px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+}
+.img-share-man{
+    position: relative;
+    width: 160px;
+    z-index: 1;
+    margin-top: 40px;
+}
+.img-share-gun{
+    position: relative;
+    width: 250px;
+}
+.img-share-txt{
+    position: relative;
+    width: 250px;
+}
+
+.div-button{
+    position: relative;
+    margin-top: 50px;
+}
+.div-blue-bg{
+    width: 250px;
+    height: 70px;
+    background: url(../img/btn-normal.png) no-repeat;
+    background-size: 100%;
+    color: #FFF;
+    font-size: 2.5rem;
+    line-height:45px;
+    margin: 0 auto;
+}
+
+.record-title{
+    font-size: 2rem;
+}
+
+.item-content{
+    position: relative;
+    height: 80px;
+}
+
+.img-record{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.name-record{
+    font-size: 2rem;
+    float: left;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.detail-content{
+    width: 100px;
+    height: 60px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 2rem;
+    color:white;
+}
+
+.result-success{
+    background: url(../img/img-detail-result-1.png) no-repeat;
+    background-size: 100%;
+}
+
+.result-half{
+    background: url(../img/img-detail-result-3.png) no-repeat;
+    background-size: 100%;
+}
+
+.result-failed{
+    background: url(../img/img-detail-result-2.png) no-repeat;
+    background-size: 100%;
+}
+
+.result-give-up{
+    background: url(../img/img-detail-result-4.png) no-repeat;
+    background-size: 100%;
+}
+
+.div-share{
+    display: none;
+    background-color: black;
+    opacity: 0.8;
+    position: fixed;
+    top:0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+}
+
+.div-share-tx{
+    position: relative;
+    margin-top: 5%;
+}
+
+.tx-share{
+    margin-top: 10px;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.img-share-bg-2{
+    position: absolute;
+    z-index: -1;
+    height: 80%;
+    top: 5%;
+    right: 5%;
+
+}
+
+.div-page{
+    text-align: center;
+}
+
+.arrow{
+    width: 50px;
+    height: 40px;
+    margin: 20px 50px;
+}
+/**=================Toast================= */
+#toast {
+    position: fixed;
+    top:50%;
+    width: 60%;
+    left: 15%;
+    border-radius:30px;
+    background-color: black;
+    opacity: 0.9;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    -webkit-transition: opacity 0.5s ease-out;
+    display:block;
+    word-break: break-all;
+    word-wrap: break-word;
+}
